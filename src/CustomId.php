@@ -6,7 +6,6 @@ namespace Krsrk\CustomId;
 use Illuminate\Support\Facades\DB;
 
 
-
 class CustomId
 {
     const configArray = [
