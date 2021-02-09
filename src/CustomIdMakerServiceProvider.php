@@ -14,7 +14,6 @@ class CustomIdMakerServiceProvider extends ServiceProvider
 
     }
 
-
     public function register()
     {
         $this->app->make('Krsrk\CustomId\CustomIdMaker');

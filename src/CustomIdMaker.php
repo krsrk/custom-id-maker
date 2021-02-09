@@ -6,7 +6,7 @@ namespace Krsrk\CustomId;
 use Illuminate\Support\Facades\DB;
 
 
-class CustomId
+class CustomIdMaker
 {
     const configArray = [
         'dbTable'             => '',
