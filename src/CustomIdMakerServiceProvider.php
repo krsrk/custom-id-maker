@@ -7,7 +7,7 @@ namespace Krsrk\CustomId;
 use Illuminate\Support\ServiceProvider;
 
 
-class CustomIdServiceProvider extends ServiceProvider
+class CustomIdMakerServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -17,6 +17,6 @@ class CustomIdServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->make('Krsrk\CustomId\CustomId');
+        $this->app->make('Krsrk\CustomId\CustomIdMaker');
     }
 }
