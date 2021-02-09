@@ -1,0 +1,19 @@
+{
+    "name": "krsrk/custom-id-generator",
+    "description": "Generates Guid, SKU and Custom ID (from database).",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Krs",
+            "email": "christian.lopez.be@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Krsrk\\CustomId\\": "src/"
+        }
+    },
+    "require": {}
+}
