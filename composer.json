@@ -15,5 +15,12 @@
             "Krsrk\\CustomId\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Krsrk\\CustomId\\CustomIdServiceProvider"
+            ]
+        }
+    },
     "require": {}
 }
