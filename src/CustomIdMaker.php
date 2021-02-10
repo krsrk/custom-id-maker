@@ -118,11 +118,13 @@ class CustomIdMaker
         $baseQueryStringCondition = '';
 
         if ($this->config->resetPrefix) {
-            $baseQueryString = sprintf("SELECT COUNT(%s) maxItem from %s WHERE %s like %s",
-                $this->config->dbTableField,
+            $baseQueryString = sprintf(
+                "SELECT COUNT(*) maxItem FROM %s WHERE SUBSTRING(%s, 1, LOCATE(%s, %s) - 1) = %s",
                 $this->config->dbTable,
                 $this->config->dbTableField,
-                "'" . $this->config->prefixId . "%'"
+                "'" . $this->config->prefixSeparator . "'",
+                $this->config->dbTableField,
+                "'" . $this->config->prefixId . "'",
             );
         }
 
